@@ -1,0 +1,18 @@
+package di_p.main;
+
+import di_p.Bike;
+
+public class bike_main {
+
+	public static void main(String[] args) {
+		
+		Bike bk1 = new Bike();
+		
+		bk1.setName("세발자전거");
+		bk1.setWheel(3);
+		
+		System.out.println(bk1);
+
+	}
+
+}

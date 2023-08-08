@@ -1,0 +1,48 @@
+package di_p;
+
+public class Bike {
+	
+	String name;
+	String wheel;
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getWheel() {
+		return wheel;
+	}
+
+
+
+	public void setWheel(String wheel) {
+		this.wheel = wheel;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Bike [name=" + name + ", wheel=" + wheel + "]";
+	}
+
+
+
+	public void setWheel(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

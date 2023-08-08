@@ -1,0 +1,49 @@
+package di_p;
+
+public class Camera {
+	
+	String name;
+	int pixel;
+	
+	public Camera() {
+		System.out.println("Create");
+	}
+	
+	
+	public String getName() {
+		System.out.println("nameset");
+		return name;
+	}
+
+
+
+
+	public void setName(String name) {
+		System.out.println("nameset " + name);
+		this.name = name;
+	}
+
+
+
+
+	public int getPixel() {
+		return pixel;
+	}
+
+
+
+
+	public void setPixel(int pixel) {
+		this.pixel = pixel;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Camera [name=" + name + ", pixel=" + pixel + "]";
+	}
+	
+	
+}

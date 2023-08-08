@@ -1,0 +1,9 @@
+package di_p;
+
+public class Bstatus {
+
+    public String status;
+
+    public Bstatus() {
+
+}

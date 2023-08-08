@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.springframework.org/schema/beans"
+xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframworks.org/schema/beans"
+>
+
+
+</beans>
+

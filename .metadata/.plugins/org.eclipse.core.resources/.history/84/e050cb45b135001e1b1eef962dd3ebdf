@@ -1,0 +1,11 @@
+package bike;
+
+public class Backet {
+
+	int Backet = 0;
+
+	public Backet() {
+		System.out.println("Backet");
+	}
+	
+}

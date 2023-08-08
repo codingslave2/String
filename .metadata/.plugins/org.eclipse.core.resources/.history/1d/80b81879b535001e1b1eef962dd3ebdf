@@ -1,0 +1,13 @@
+package bike;
+
+public class Handle {
+	
+	int Handle;
+
+	public Handle(int handle) {
+		this.Handle = handle;
+	}
+
+
+
+}

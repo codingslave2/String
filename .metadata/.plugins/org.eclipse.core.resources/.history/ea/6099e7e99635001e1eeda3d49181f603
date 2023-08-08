@@ -1,0 +1,21 @@
+package di_p.main;
+
+import di_p.Camera;
+import di_p.HandPhone;
+
+public class DI_main {
+
+	public static void main(String[] args) {
+		
+		HandPhone hp1 = new HandPhone();
+		Camera cam1 = new Camera();
+		
+		cam1.setName("1");
+		hp1.setName("2");
+		
+		System.out.println(hp1);
+		
+
+	}
+
+}

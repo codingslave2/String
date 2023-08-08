@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	<bean class="bike.Bike" name="bk1">
+		<property name="name" value="세발자전거"></property>
+		<property name="wheel" value="3"></property>
+		<property name="backet" value="0"></property>
+	</bean>
+	
+	<bean class="bike.Bike" name="bk2">
+		<property name="name" value="MTB"></property>
+		<property name="wheel" value="3"></property>
+		<property name="backet" value="0"></property>
+	</bean>
+	
+	<bean class="bike.Bike" name="bk3">
+		<property name="name" value="CF"></property>
+		<property name="wheel" value="2"></property>
+		<property name="backet" value="1"></property>
+	</bean>
+	
+</beans>
+	

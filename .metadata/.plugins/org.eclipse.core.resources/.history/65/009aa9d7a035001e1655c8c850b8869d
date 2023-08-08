@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="di_p.HandPhone" name="hp2">
+		<property name="name">
+			<value>갤럭시</value>
+		</property>
+		<property name="cam">
+			<ref bean="cam2"></ref>
+		</property>
+	</bean>
+	<bean class="di_p.Camera" name="cam2">
+		<property name="name" value="라이카"/>
+		<property name="pixel" value="1000000"/>
+	</bean>
+	
+	<bean class="di_p.Bike" name="bike1">
+		<property name="name" value="자전거"></property>
+	</bean>
+	
+</beans>

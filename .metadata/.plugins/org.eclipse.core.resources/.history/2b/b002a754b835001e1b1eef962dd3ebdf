@@ -1,0 +1,18 @@
+package bike;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import bike.Wheel;
+import bike.Bike;
+
+public interface BikeMovement {
+	
+	public static void main(String[] args) {
+		
+		Bike bike = (Bike) new 
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext();
+		
+	}
+	
+}

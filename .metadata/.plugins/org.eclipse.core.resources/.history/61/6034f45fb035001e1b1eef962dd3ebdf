@@ -1,0 +1,11 @@
+package bike;
+
+public class Wheel {
+	
+	int wheel = 0;
+
+	public Wheel(int wheel) {
+		this.wheel = wheel;
+	}
+	
+}

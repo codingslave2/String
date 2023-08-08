@@ -1,0 +1,24 @@
+package bike;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import bike.Bike;
+
+public interface BikeMovement {
+	
+	public static void main(String[] args) {		
+
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
+		
+		Bike bike = (Bike) context.getBean("bike");
+		
+		bike.move();
+		bike.repair();
+		bike.stop();
+
+		context.close();
+		
+	}
+	
+}
+

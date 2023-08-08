@@ -1,0 +1,14 @@
+package bike;
+
+public class Handle {
+	
+	int Handle;
+
+	public Handle(int handle) {
+		System.out.println("핸들없는 자전거가 어딨냐");
+		this.Handle = handle;
+	}
+
+
+
+}

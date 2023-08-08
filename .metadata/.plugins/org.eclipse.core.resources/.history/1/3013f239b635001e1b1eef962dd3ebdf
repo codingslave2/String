@@ -1,0 +1,34 @@
+package bike;
+
+public class Handle {
+	
+	int Handle;
+
+	public Handle(int handle) {
+		System.out.println("핸들없는 자전거가 어딨냐");
+		this.Handle = handle;
+	}
+	
+	
+
+	public int getHandle() {
+		return Handle;
+	}
+
+
+
+	public void setHandle(int handle) {
+		System.out.println("핸들?: ");
+		Handle = handle;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Handle [Handle=" + Handle + "]";
+	}
+
+	
+
+}
