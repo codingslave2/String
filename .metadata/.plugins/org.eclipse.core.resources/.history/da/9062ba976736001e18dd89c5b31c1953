@@ -1,0 +1,9 @@
+package Student;
+
+public class Subject {
+	
+	String kor; // 국어
+	String eng; // 영어
+	String mat; // 수학
+
+}

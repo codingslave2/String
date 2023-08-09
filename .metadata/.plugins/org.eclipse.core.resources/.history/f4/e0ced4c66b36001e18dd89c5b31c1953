@@ -1,0 +1,39 @@
+package Student;
+
+public class Student {
+	
+	String sname; // 학생명
+	int sage; // 학생 나이
+	
+	
+	
+	public String getSname() {
+		return sname;
+	}
+
+
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+
+
+	public int getSage() {
+		return sage;
+	}
+
+
+
+	public void setSage(int sage) {
+		this.sage = sage;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Student [sname=" + sname + ", sage=" + sage + "]";
+	}
+	
+}

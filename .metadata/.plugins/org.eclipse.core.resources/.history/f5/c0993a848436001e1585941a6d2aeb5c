@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+<bean class="java.util.ArrayList" name="students">
+    <constructor-arg>
+        <array>
+            <ref bean="st1" />
+            <ref bean="st2" />
+            <ref bean="st3" />
+            <ref bean="st4" />
+            <ref bean="st5" />
+        </array>
+    </constructor-arg>
+</bean>
+
+<bean id="st1" class="Student">
+	<property name="name" value="라이언"></property>
+</bean>
+<bean id="st2" class="Student">
+	<property name="name" value="춘식"></property>
+</bean>
+<bean id="st3" class="Student">
+	<property name="name" value="죠르디"></property>
+</bean>
+<bean id="st4" class="Student">
+	<property name="name" value="앙몬드"></property>
+</bean>
+<bean id="st5" class="Student">
+	<property name="name" value="팬다"></property>
+</bean>
+	
+	<bean class="java.util.HashMap" name="scores">
+		<property name="scores">
+			
+			
+		</property>
+	</bean>
+	
+</beans>

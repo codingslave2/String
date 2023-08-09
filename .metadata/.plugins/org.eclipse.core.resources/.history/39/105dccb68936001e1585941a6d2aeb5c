@@ -1,0 +1,44 @@
+package Student;
+
+import java.util.Map;
+import java.util.List;
+
+
+public class Student {
+    
+	String name;
+	int scores;
+
+	
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public int getScores() {
+		return scores;
+	}
+
+
+
+	public void setScores(int scores) {
+		this.scores = scores;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", scores=" + scores + "]";
+	}
+    
+    
+}

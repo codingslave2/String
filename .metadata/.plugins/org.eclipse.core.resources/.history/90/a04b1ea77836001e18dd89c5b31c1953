@@ -1,0 +1,14 @@
+package Student;
+
+import java.util.List;
+import java.util.Map;
+
+public class Student {
+	
+	private List<Student> students;
+	
+	public void setStudents(List<Student> students) {
+		this.students = students;
+	}
+	
+}

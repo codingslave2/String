@@ -1,0 +1,38 @@
+package Student.StudentMain;
+
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import Student.Student;
+
+
+public class StudentMain {
+
+    public static void main(String[] args) {
+        
+    	AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("di_xml/Student.xml");
+    	   	
+		Student st1 = context.getBean("st1",Student.class); //클래스네임,클래스명칭,
+		System.out.println(st1 + "총점: " + st1.getTotal());
+		Student st2 = context.getBean("st2",Student.class); //클래스네임,클래스명칭,
+		System.out.println(st2 + "총점: " + st2.getTotal());
+		Student st3 = context.getBean("st3",Student.class); //클래스네임,클래스명칭,
+		System.out.println(st3 + "총점: " + st3.getTotal());
+		Student st4 = context.getBean("st4",Student.class); //클래스네임,클래스명칭,
+		System.out.println(st4 + "총점: " + st4.getTotal());
+		Student st5 = context.getBean("st5",Student.class); //클래스네임,클래스명칭,
+		System.out.println(st5 + "총점: " + st5.getTotal());
+
+		
+
+		context.close();
+		
+
+    }
+
+}

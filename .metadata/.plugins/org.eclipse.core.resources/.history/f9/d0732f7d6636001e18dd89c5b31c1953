@@ -1,0 +1,39 @@
+package di_p.main;
+
+public class DIColl {
+
+    String nick;
+    int age;
+
+    int [] arr, arr1;
+
+    LinkedList arr2;
+
+    Set ss1;
+
+    Map mm1;
+
+    public int[] getArr1() {
+        return arr1;
+    }
+
+    public void setArr1(int... arr1) {
+        this.arr1 = arr1;
+    }
+
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+
+
+
+}

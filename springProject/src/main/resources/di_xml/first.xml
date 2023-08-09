@@ -24,6 +24,11 @@
 		<property name="pixel" value="20000"></property>
 	</bean>
 	
+	<bean class="di_p.Camera" name="cam5">
+		<constructor-arg name="name" value="5번캠"></constructor-arg>
+		<constructor-arg value="캐논"></constructor-arg>
+	</bean>
+	
 	
 	
 </beans>

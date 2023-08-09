@@ -1,0 +1,35 @@
+package Student.StudentMain;
+
+import java.util.Map;
+import java.util.List;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import Student.Student;
+
+
+public class StudentMain {
+
+    public static void main(String[] args) {
+        
+        // 스프링 컨테이너 초기화
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("stmn/Student.xml");
+
+        // students 빈 가져오기
+        List<Student> studentsList = context.getBean("student", List.class);
+
+        // 학생 정보 출력
+        for (Student student : studentsList) {
+            System.out.println("학생 이름: " + student.getName());
+            Map<String, Integer> scores = student.getScores();
+            for (Map.Entry<String, Integer> entry : scores.entrySet()) {
+                System.out.println(entry.getKey() + ": " + entry.getValue());
+            }
+            System.out.println("============================");
+        }
+
+        // 스프링 컨테이너 닫기
+        context.close();
+    }
+}
