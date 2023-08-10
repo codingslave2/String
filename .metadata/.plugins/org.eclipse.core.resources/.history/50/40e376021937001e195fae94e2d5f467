@@ -1,0 +1,28 @@
+package cfshop;
+
+public class CoffeeShop {
+	
+	Coffee order(){
+		System.out.println("Ordering coffee");
+		return new Coffee("Americano", 2000);
+	}
+	
+	
+	
+}
+
+class Coffee{
+	
+	String name;
+	int price;
+	
+	public Coffee(String name, int price) {
+		
+		super();
+		this.name = name;
+		this.price = price;
+		
+	}
+	
+	
+}

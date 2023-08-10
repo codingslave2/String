@@ -1,0 +1,10 @@
+package Phone;
+
+public class HandPhone {
+	
+	String name;
+	Battery bat;
+	Display dis;
+	Camera cam;
+	
+}

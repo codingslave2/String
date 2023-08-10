@@ -39,6 +39,8 @@ public class Student {
 		if(scores.size() > 0) { // 과목 점수의 총량 구하기
 			avg = total / scores.size(); // 만약 과목 점수의 총량이 0보다 크면 계산 가능
 		}
+
+
 	}
 
 	

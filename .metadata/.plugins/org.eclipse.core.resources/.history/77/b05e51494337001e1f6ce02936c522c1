@@ -1,0 +1,8 @@
+package Phone;
+
+public class Battery {
+	
+	String name;
+	String productor;
+	
+}

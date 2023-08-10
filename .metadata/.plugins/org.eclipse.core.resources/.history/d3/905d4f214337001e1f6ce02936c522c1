@@ -1,0 +1,9 @@
+package Phone;
+
+public class Camera {
+	
+	String name;
+	int pixel;
+	Brand bname;
+	
+}

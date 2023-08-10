@@ -1,0 +1,22 @@
+package Phone;
+
+public class Display {
+	
+	String productor;
+	int size;
+	public String getProductor() {
+		return productor;
+	}
+	public void setProductor(String productor) {
+		this.productor = productor;
+	}
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	
+	
+}

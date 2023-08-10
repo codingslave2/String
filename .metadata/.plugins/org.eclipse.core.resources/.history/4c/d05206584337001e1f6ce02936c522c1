@@ -1,0 +1,9 @@
+package Phone;
+
+public class Battery {
+	
+	String name;
+	String productor;
+	int capacity; // 용량
+	
+}

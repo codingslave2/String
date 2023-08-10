@@ -1,9 +1,0 @@
-package Student;
-
-public class Student {
-	
-	String sname; // 학생명
-	int sage; // 학생 나이
-	
-	
-}

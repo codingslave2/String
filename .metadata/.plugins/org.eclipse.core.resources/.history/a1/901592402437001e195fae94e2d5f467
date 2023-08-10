@@ -1,0 +1,42 @@
+package cfshop;
+
+public class CoffeeShop {
+	
+	public Coffee order1(){
+		System.out.println("Ordering coffee");
+		return new Coffee("Americano", 2000);
+	}
+	
+	public void order_void() {
+		//<lookup-method name="order_void" bean="co"/>
+		// 가 적용되어 메소드 실행되지 않음
+		System.out.println("order_void 실행");
+	}
+
+	public Tea order_tea() {
+		System.out.println("Ordering tea");
+		return new Tea("Green Tea", 1000);
+}
+
+	private Coffee order_coffee() {
+		System.out.println("Ordering coffee");
+        return new Coffee("Mocha", 2000);
+	}
+
+
+	
+
+
+@Override
+public String toString() {
+	return "CoffeeShop [order1()=" + order1() + ", order_tea()=" + order_tea() + ", order_coffee()=" + order_coffee()
+			+ "]";
+}
+
+
+
+	
+}
+	
+	
+

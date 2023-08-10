@@ -1,0 +1,10 @@
+package Phone;
+
+public class Display {
+	
+	String productor;
+	int size;
+	
+	
+	
+}

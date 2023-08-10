@@ -1,0 +1,10 @@
+package Phone;
+
+public class Camera {
+	
+	String name;
+	String productor;
+	int pixel;
+	
+	
+}
