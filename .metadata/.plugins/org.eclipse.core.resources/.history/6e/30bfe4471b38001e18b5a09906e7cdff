@@ -1,0 +1,9 @@
+package Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Coffee {
+	
+	@Autowired
+
+}

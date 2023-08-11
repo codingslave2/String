@@ -1,0 +1,10 @@
+package di_p.main;
+
+public class LifeCycle {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

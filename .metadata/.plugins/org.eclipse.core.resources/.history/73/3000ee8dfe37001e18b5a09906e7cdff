@@ -1,0 +1,44 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="StuRank.Student" name="red" p:name="red1">
+	    <property name="score">
+	        <list>
+	            <value>10</value>
+	            <value>20</value>
+	            <value>30</value>
+	            <value>40</value>
+	            <value>50</value>
+	        </list>
+	    </property>
+	</bean>
+	
+	<bean class="StuRank.Student" name="red" p:name="red2">
+	    <property name="score">
+	        <list>
+	            <value>20</value>
+	            <value>30</value>
+	            <value>40</value>
+	            <value>50</value>
+	            <value>60</value>
+	        </list>
+	    </property>
+	</bean>
+	
+	<bean class="StuRank.Student" name="red" p:name="red3">
+	    <property name="score">
+	        <list>
+	            <value>30</value>
+	            <value>40</value>
+	            <value>50</value>
+	            <value>60</value>
+	            <value>70</value>
+	        </list>
+	    </property>
+	</bean>
+
+    
+</beans>

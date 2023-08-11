@@ -11,7 +11,7 @@ public class RestaurantMain {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("di_xml/rest.xml");
 		Restaurant res = (Restaurant) context.getBean("restaurant", Restaurant.class);
-		System.out.println("Order: " + res.("Chicken", 100));
+		System.out.println("");
 
 	}
 

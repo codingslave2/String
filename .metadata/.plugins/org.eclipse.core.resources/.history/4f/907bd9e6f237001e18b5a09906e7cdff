@@ -1,0 +1,7 @@
+package StuRank;
+
+public class Student {
+
+	String name;
+	
+}

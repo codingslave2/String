@@ -1,0 +1,17 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="StuRank.Student" name="st1" p:name="red" p:score="[10, 20, 30, 40, 50]">
+		<property name="">
+			<array>
+				<list></list>
+			</array>
+		</property>
+	</bean>
+	<bean class="StuRank.Student" name="st2" p:name="blue" p:score="[20, 30, 40, 50, 60]"></bean>
+	<bean class="StuRank.Student" name="st3" p:name="yellow" p:score="[30, 40, 50, 60, 70]"></bean>
+
+
+</beans>

@@ -1,0 +1,14 @@
+package di_p;
+
+
+import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
+
+public class MyBeanFactoryPostProcessor implements BeanDefinitionRegistryPostProcessor{
+
+	@Override
+    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throw;
+	
+	System.out.println("MyBeanFactoryPostProcessor");
+	
+}

@@ -1,0 +1,82 @@
+package Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Coffee {
+	
+	@Autowired
+	
+	String name;
+	int Price;
+	CoffeeBeans cbean;
+	Etc etc;
+	
+	
+    public void setName(String name) {  // 수정된 부분
+    	this.name = name;
+    }
+	
+	
+	public void setPrice(int price) {
+		Price = price;
+	}
+	public void setCbean(CoffeeBeans cbean) {
+		this.cbean = cbean;
+	}
+	
+	@Autowired(required = false)
+	public void setEtc(Etc etc) {
+		this.etc = etc;
+	}
+	
+	@Override
+	public String toString() {
+		return "Coffee [name=" + name + ", Price=" + Price + ", cbean=" + cbean + ", etc=" + etc + "]";
+	}
+	
+
+}
+
+
+
+
+class CoffeeBeans{
+	
+	String name;
+	int price;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setPack(int pack) {
+		this.pack = pack;
+	}
+	
+	@Override
+	public String toString() {
+		return "CoffeeBeans [name=" + name + ", pack=" + pack + "]";
+	}
+	
+	
+}
+
+class Etc{
+	
+	String name;
+	int ml;
+	
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setMl(int ml) {
+		this.ml = ml;
+	}
+	
+	@Override
+	public String toString() {
+		return "Etc [name=" + name + ", ml=" + ml + "]";
+	}
+	
+	
+}

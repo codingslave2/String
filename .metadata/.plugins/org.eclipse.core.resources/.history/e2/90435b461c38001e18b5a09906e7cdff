@@ -1,0 +1,28 @@
+package Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Coffee {
+	
+	@Autowired
+	
+	Coffee coffee;
+	int Price;
+	CoffeeBeans cbean;
+	Etc etc;
+
+}
+
+
+
+class CoffeeBeans{
+	String name;
+	int pack;
+}
+
+class Etc{
+	
+	String name;
+	
+	
+}

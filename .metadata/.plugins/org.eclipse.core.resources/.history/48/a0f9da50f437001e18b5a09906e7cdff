@@ -1,0 +1,24 @@
+package StuRank;
+
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Student implements BeanNameAware, InitializingBean, DisposableBean{
+
+	String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + "]";
+	}
+	
+}
