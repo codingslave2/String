@@ -1,0 +1,11 @@
+package component;
+
+import component.sub1.Mouse;
+
+public class NoteBook {
+	
+	desktop dk;
+	Mouse mouse;
+	String name = "샘숭노트북";
+	
+}

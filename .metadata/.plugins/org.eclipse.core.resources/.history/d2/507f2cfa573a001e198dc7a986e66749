@@ -1,0 +1,21 @@
+package anno_p.com;
+
+import anno_p.com.sub1.Mouse;
+import anno_p.comabc.Monitor;
+
+public class WorkStation {
+	
+	String name;
+	
+	Bonche bon;
+	
+	Monitor m1, m2;
+
+	Mouse ms;
+
+	@Override
+	public String toString() {
+		return "WorkStation [name=" + name + ", bon=" + bon + ", m1=" + m1 + ", m2=" + m2 + ", ms=" + ms + "]";
+	}
+	
+}

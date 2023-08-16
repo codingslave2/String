@@ -11,7 +11,9 @@ public class CoffeeMain {
 				new ClassPathXmlApplicationContext("anno_xml/coffee.xml");
 
 		
-		System.out.println(context.getBean("cf1"));
+		System.out.println(context.getBean("coffee1"));
+		System.out.println(context.getBean("coffee2"));
+		System.out.println(context.getBean("coffee3"));
 		
 		
 		context.close();

@@ -1,0 +1,13 @@
+package anno_p.Coffee.type;
+
+public class Americano {
+	
+	String name = "아메리카노", type="커피";
+	String price = "1500";
+	
+	@Override
+	public String toString() {
+		return "Americano [name=" + name + ", type=" + type + ", cc=" + cc + ", price=" + price + "]";
+	}
+	
+}

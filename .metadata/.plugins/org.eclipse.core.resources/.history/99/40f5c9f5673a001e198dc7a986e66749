@@ -1,0 +1,8 @@
+package Coffee.type;
+
+public class Americano {
+	
+	String name;
+	int price;
+	
+}

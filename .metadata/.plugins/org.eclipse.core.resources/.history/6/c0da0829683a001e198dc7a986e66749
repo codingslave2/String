@@ -1,0 +1,13 @@
+package Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import Coffee.type.Americano;
+
+public class Coffee {
+	
+	Americano am;
+	Latte lt;
+		
+	
+}

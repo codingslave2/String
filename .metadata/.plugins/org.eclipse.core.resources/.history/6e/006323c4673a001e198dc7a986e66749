@@ -1,0 +1,8 @@
+package Coffee.type;
+
+public class etc {
+	
+	String beans;
+	String syrup;
+	
+}

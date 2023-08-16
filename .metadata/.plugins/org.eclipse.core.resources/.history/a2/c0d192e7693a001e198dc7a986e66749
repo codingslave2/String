@@ -1,0 +1,46 @@
+package Coffee;
+
+import Coffee.CoffeeEtc.CoffeeBeans;
+import Coffee.type.Americano;
+import Coffee.type.Latte;
+import Coffee.type.Machiatto;
+
+public class Coffee {
+	
+	String name;
+	Americano am;        // 아메리카노
+	Latte lt;            // 라떼
+	Machiatto mc;        // 마끼아또
+	CoffeeBeans beans;   // 커피 원두
+	
+	public Americano getAm() {
+		return am;
+	}
+	public void setAm(Americano am) {
+		this.am = am;
+	}
+	public Latte getLt() {
+		return lt;
+	}
+	public void setLt(Latte lt) {
+		this.lt = lt;
+	}
+	public Machiatto getMc() {
+		return mc;
+	}
+	public void setMc(Machiatto mc) {
+		this.mc = mc;
+	}
+	public CoffeeBeans getBeans() {
+		return beans;
+	}
+	public void setBeans(CoffeeBeans beans) {
+		this.beans = beans;
+	}
+	
+	@Override
+	public String toString() {
+		return "Coffee [am=" + am + ", lt=" + lt + ", mc=" + mc + ", beans=" + beans + "]";
+	}
+		
+}

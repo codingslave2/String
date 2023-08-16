@@ -1,0 +1,9 @@
+package component;
+
+public class desktop {
+	
+	String name = "샘숭", cpu = "1.4Ghz"
+	
+	int
+	
+}

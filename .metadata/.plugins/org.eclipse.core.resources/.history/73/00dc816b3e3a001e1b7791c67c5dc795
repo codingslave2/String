@@ -1,0 +1,13 @@
+package component.sub1;
+
+public class Mouse {
+	
+	String name = "로지텍", type = "무선";
+
+	@Override
+	public String toString() {
+		return "Mouse [name=" + name + ", type=" + type + "]";
+	}
+
+	
+}

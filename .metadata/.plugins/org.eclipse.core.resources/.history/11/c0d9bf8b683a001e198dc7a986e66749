@@ -1,0 +1,11 @@
+package Coffee.CoffeeEtc;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CoffeeBeans {
+	
+	String name;
+	int price
+	
+}

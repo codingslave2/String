@@ -1,115 +1,57 @@
 package Coffee;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import Coffee.CoffeeEtc.CoffeeBeans;
+import Coffee.type.Milk;
+import Coffee.type.Syrup;
+import Coffee.type.Water;
+
 
 public class Coffee {
 	
-	@Autowired
 	
 	String name;
-	int Price;
-	CoffeeBeans cbean;
-	Etc etc;
+	Water wt;        // 물
+	Milk mk;            // 우유
+	Syrup sr;        // 시럽
+	CoffeeBeans beans;   // 커피 원두
 	
 	
-    public void setName(String name) {  // 수정된 부분
-    	this.name = name;
-    }
 	
-	
-	public void setPrice(int price) {
-		Price = price;
+	public String getName() {
+		return name;
 	}
-	public void setCbean(CoffeeBeans cbean) {
-		this.cbean = cbean;
-	}
-	
-	@Autowired(required = false)
-	public void setEtc(Etc etc) {
-		this.etc = etc;
-	}
-	
-	@Override
-	public String toString() {
-		return "Coffee [name=" + name + ", Price=" + Price + ", cbean=" + cbean + ", etc=" + etc + "]";
-	}
-	
-
-}
-
-
-
-
-class CoffeeBeans{
-	
-	String name, product;
-	int price;
-	
 	public void setName(String name) {
 		this.name = name;
 	}
 	
-	public void setProduct(String product) {
-		this.product = product;
+	public Water getWt() {
+		return wt;
 	}
-
-	public void setPrice(int price) {
-		this.price = price;
+	public void setWt(Water wt) {
+		this.wt = wt;
+	}
+	public Milk getMk() {
+		return mk;
+	}
+	public void setMk(Milk mk) {
+		this.mk = mk;
+	}
+	public Syrup getSr() {
+		return sr;
+	}
+	public void setSr(Syrup sr) {
+		this.sr = sr;
+	}
+	public CoffeeBeans getBeans() {
+		return beans;
+	}
+	public void setBeans(CoffeeBeans beans) {
+		this.beans = beans;
 	}
 	
 	@Override
 	public String toString() {
-		return "CoffeeBeans [name=" + name + ", product=" + product + ", price=" + price + "]";
-	}
-	
-	
-}
-
-class Etc{
-	
-	String syrup, milk, pouder;
-	int ml;
-	
-	
-		
-	public String getSyrup() {
-		return syrup;
-	}
-
-	public void setSyrup(String syrup) {
-		this.syrup = syrup;
-	}
-
-	public String getMilk() {
-		return milk;
-	}
-
-	public void setMilk(String milk) {
-		this.milk = milk;
-	}
-
-	public String getPouder() {
-		return pouder;
-	}
-
-	public void setPouder(String pouder) {
-		this.pouder = pouder;
-	}
-
-	public int getMl() {
-		return ml;
-	}
-
-	public void setMl(int ml) {
-		this.ml = ml;
-	}
-
-
-
-	@Override
-	public String toString() {
-		return "Etc [syrup=" + syrup + ", milk=" + milk + ", pouder=" + pouder + ", ml=" + ml + "]";
+		return "Coffee [name=" + name + ", wt=" + wt + ", mk=" + mk + ", sr=" + sr + ", beans=" + beans + "]";
 	}
 		
-	
 }

@@ -1,0 +1,7 @@
+package anno_p.Coffee.type;
+
+public class etc {
+	
+	String name, type;
+	
+}

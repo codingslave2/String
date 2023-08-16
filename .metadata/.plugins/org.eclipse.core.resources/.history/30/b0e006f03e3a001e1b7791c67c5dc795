@@ -1,0 +1,18 @@
+package component;
+
+import component.sub1.Mouse;
+
+@Component
+public class NoteBook {
+	
+	desktop dk;
+	Mouse mouse;
+	String name = "샘숭노트북";
+	
+	@Override
+	public String toString() {
+		return "NoteBook [dk=" + dk + ", mouse=" + mouse + ", name=" + name + "]";
+	}
+	
+	
+}

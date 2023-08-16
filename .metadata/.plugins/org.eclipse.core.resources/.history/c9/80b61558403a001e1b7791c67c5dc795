@@ -1,0 +1,13 @@
+package component.sub2;
+
+public class Monitor {
+	
+	String name = "벤큐";
+	int size = 20;
+	
+	@Override
+	public String toString() {
+		return "Monitor [name=" + name + ", size=" + size + "]";
+	}
+	
+}

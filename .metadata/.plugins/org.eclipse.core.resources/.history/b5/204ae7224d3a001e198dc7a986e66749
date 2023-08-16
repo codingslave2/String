@@ -1,0 +1,11 @@
+package anno_p.Coffee;
+
+public interface Coffee {
+	
+    String getName();
+
+    int getPrice();
+
+
+	
+}

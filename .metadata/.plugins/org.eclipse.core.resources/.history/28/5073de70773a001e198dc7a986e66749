@@ -1,0 +1,20 @@
+package anno_p;
+
+import org.springframework.context.annotation.Bean;
+
+public class AnnoConfig {
+	
+	BiHandle hd() {
+		
+	}
+	
+	BiWheel wh() {
+		
+	}
+
+	@Bean
+	BiCycle mtb() {
+		
+	}
+	
+}

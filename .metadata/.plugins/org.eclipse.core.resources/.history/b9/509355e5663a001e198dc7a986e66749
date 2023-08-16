@@ -1,0 +1,16 @@
+package anno_p.Coffee.type;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Machiatto {
+	
+	String name = "마끼아또", type="커피";
+	int cc, price;
+	
+	@Override
+	public String toString() {
+		return "Machiatto [name=" + name + ", type=" + type + ", cc=" + cc + ", price=" + price + "]";
+	}
+		
+}

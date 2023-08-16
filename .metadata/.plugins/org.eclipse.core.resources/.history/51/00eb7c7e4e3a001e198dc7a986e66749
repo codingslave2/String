@@ -1,0 +1,9 @@
+package anno_p.Coffee;
+
+import anno_p.Coffee.type.Americano;
+
+public interface CoffeeClassFile {
+	
+	Americano ac;
+	
+}

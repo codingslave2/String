@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 물(Water) 빈 정의 -->
+    <bean name="wt" class="Coffee.type.Water">
+		<property name="name" value="생수" />
+    </bean>
+
+    <!-- 우유(Milk) 빈 정의 -->
+    <bean name="mk" class="Coffee.type.Milk">
+		<property name="name" value="mlenko" />
+        <property name="cc" value="200" />
+    </bean>
+
+    <!-- 시럽(Syrup) 빈 정의 -->
+    <bean name="sr" class="Coffee.type.Syrup">
+		<property name="name" value="카라멜시럽" />      
+		<property name="cc" value="50" />      
+    </bean>
+
+    <!-- 커피 원두(CoffeeBeans) 빈 정의 -->
+    <bean name="beans" class="Coffee.CoffeeEtc.CoffeeBeans">
+		<property name="name" value="커피원두" />        
+		<property name="productor" value="에티오피아산" />      
+		<property name="price" value="200" />      
+    </bean>
+
+    <!-- 커피(Coffee) 빈 정의 -->
+    <bean name="coffee1" class="Coffee.Coffee">
+        <!-- 커피 이름 설정 -->
+	    <property name="name" value="아메리카노" />
+	    <property name="wt" ref="wt" />
+	    <property name="mk" ref="mk" />
+	    <property name="sr" ref="sr" />
+	    <property name="beans" ref="beans" />
+
+
+    </bean>
+</beans>

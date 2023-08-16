@@ -1,0 +1,7 @@
+package Coffee.CoffeeEtc;
+
+public class CoffeeBeans {
+	
+	String name;
+	
+}

@@ -1,0 +1,14 @@
+package anno_p.Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import anno_p.Coffee.type.Americano;
+
+public interface Coffee {
+	
+	@Autowired
+	Americano ac;
+
+
+	
+}

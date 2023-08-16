@@ -1,0 +1,17 @@
+package Coffee;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import Coffee.CoffeeEtc.CoffeeBeans;
+import Coffee.type.Americano;
+import Coffee.type.Latte;
+import Coffee.type.Machiatto;
+
+public class Coffee {
+	
+	Americano am;
+	Latte lt;
+	Machiatto mc;
+	CoffeeBeans beans;
+	
+}

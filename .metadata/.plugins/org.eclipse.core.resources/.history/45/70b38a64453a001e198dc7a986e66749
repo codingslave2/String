@@ -1,0 +1,16 @@
+package component.sub2;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mnntt extends Monitor {
+
+	String name = "샘숭";
+	int size = 25;
+	@Override
+	public String toString() {
+		return "Monitor [name=" + name + ", size=" + size + "]";
+	}
+	
+	
+}

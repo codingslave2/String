@@ -1,0 +1,8 @@
+package Coffee.type;
+
+public class Syrup {
+	
+	String name;
+	int cc;
+	
+}

@@ -1,0 +1,8 @@
+package anno_p.Coffee.type;
+
+public class etc {
+	
+	String[] name = {"원두", "시럽", "우유"};
+	int [] = {price, cc};
+	
+}

@@ -1,0 +1,19 @@
+package Coffee.type;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class etc {
+	
+	String beans;
+	String syrup;
+	String water;
+	String milk;
+	
+	@Override
+	public String toString() {
+		return "etc [beans=" + beans + ", syrup=" + syrup + ", water=" + water + ", milk=" + milk + "]";
+	}
+		
+	
+}
