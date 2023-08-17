@@ -1,0 +1,12 @@
+package Restaurant.Order;
+
+
+
+public class Foods {
+	
+	String name, type;
+	int Price, Quantity;
+	
+	
+
+}

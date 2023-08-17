@@ -1,0 +1,24 @@
+package aop_p.Score;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class StudentRes {
+	
+	Map<String, StudentData> map = new HashMap();
+
+	void add(StudentData data) {
+		StudentData sd = null;
+		if(map.containsKey(data.getName())) {
+            sd = map.get(data.getName());
+            sd.setScore(sd.getScore() + data.getScore());
+        }else {
+			sd = new StudentData();
+
+		}
+	}
+	
+}

@@ -1,0 +1,9 @@
+package aop_p.Score;
+
+public class Score {
+	
+	public String class1() {
+		
+	}
+	
+}

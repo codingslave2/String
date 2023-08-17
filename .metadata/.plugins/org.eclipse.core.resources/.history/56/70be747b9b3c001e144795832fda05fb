@@ -1,0 +1,23 @@
+package aop_p.adv;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Score {
+
+	public String class1() {
+		return null;
+		
+	}
+	
+	public String class2() {
+		return null;
+		
+	}
+	
+	public String class3() {
+		return null;
+		
+	}
+	
+}

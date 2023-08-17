@@ -1,0 +1,15 @@
+package Restaurant.Order;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AnnoOrder {
+	
+	@Before("execution(* Restaurant.Order..* (..)")
+	void before(JoinPoint jointPoint) {
+		System.out.println("비포: " + jointPoint.getSignature().toShortString());
+	}
+
+}

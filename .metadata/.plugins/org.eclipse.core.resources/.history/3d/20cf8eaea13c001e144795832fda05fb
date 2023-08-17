@@ -1,0 +1,8 @@
+package aop_p.Score;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StudentScore{
+
+}

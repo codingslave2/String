@@ -27,14 +27,22 @@ https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 			pointcut-ref="dog" />
 			
 			<aop:pointcut id="classKang" expression="execution(public * aop_p.webToon.Kang*.* (..))" />
-			<aop:before method="claKang" 
+			<aop:after method="claKang" 
 			pointcut-ref="classKang" />
 			
-			<aop:before method="endO" 
+			<aop:after method="endO" 
 			pointcut="execution(public * aop_p.webToon.*.*o (..))" />
 			
 			
-			<aop:before method="oAndKang" 
+			<aop:after method="oAndKang" 
+			pointcut="execution(public * aop_p.webToon.*.*o (..)) and execution(public * aop_p.webToon.KangBada.* (..))" />
+			
+			<aop:after method="oOrJo" 
+			pointcut="execution(public * aop_p.webToon.*.*o (..)) or execution(public * aop_p.webToon.Jo*.* (..))" />
+		</aop:aspect>
+		
+		<aop:aspect ref="execAdvice2">
+			<aop:after method="ok" 
 			pointcut="execution(public * aop_p.webToon.*.*o (..)) and execution(public * aop_p.webToon.KangBada.* (..))" />
 			
 			<aop:before method="oOrJo" 

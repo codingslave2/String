@@ -1,0 +1,8 @@
+package Restaurant.Order;
+
+public class Order {
+	
+	String name, type;
+	int Price;
+	
+}

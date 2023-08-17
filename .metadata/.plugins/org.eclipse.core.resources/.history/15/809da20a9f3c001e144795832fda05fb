@@ -1,0 +1,20 @@
+package aop_p.Score;
+
+public class Score {
+	
+	String name;
+	int score;
+	
+	public String class1() {
+		return null;		
+	}
+	
+	public String class2() {
+		return null;		
+	}
+	
+	public String class3() {
+		return null;		
+	}
+	
+}

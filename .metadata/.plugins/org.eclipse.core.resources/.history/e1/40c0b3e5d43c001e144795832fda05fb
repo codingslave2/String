@@ -1,0 +1,12 @@
+package Restaurant.Order;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Order {
+	
+	public String order1(String a, int x) {
+		
+	}
+
+}

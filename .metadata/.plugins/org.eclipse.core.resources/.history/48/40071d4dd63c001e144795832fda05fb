@@ -1,0 +1,16 @@
+package Restaurant.Order;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AnnoFoods {
+	
+	HashMap<String, Foods>map;
+	
+	public AnnoFoods() {
+		
+	}
+	
+}

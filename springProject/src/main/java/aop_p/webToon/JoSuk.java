@@ -21,6 +21,9 @@ public class JoSuk {
 		System.out.println("조철왕:"+c);
 		return 4000;
 	}
-
+	
+	public void nums(int c) {
+		System.out.println("nums: " + 100/c);
+	}
 	
 }

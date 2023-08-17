@@ -1,9 +1,0 @@
-package Student;
-
-public class Score {
-	
-	int score;
-	int total;
-	avg total / subjects;
-	
-}

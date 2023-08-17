@@ -1,0 +1,5 @@
+package aop_p.Score;
+
+public class StudentScore {
+
+}

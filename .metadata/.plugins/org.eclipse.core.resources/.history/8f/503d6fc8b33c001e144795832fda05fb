@@ -1,0 +1,7 @@
+package aop_p.Score;
+
+public class Student {
+	
+	String name;
+	
+}

@@ -1,0 +1,11 @@
+package Restaurant.Order;
+
+import org.aspectj.lang.annotation.Before;
+
+public class AnnoOrder {
+	
+	@Before(""){
+		
+	}
+
+}

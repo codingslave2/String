@@ -1,0 +1,12 @@
+package Restaurant.Order;
+
+import org.aspectj.lang.JoinPoint;
+
+public class Foods {
+	
+	void before(JoinPoint jointPoint) {
+		
+	}
+	
+
+}

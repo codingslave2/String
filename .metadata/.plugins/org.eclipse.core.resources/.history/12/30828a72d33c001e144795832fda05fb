@@ -1,0 +1,14 @@
+package Restaurant.Order;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Before;
+
+public class Foods {
+	
+	@Before
+	void before(JoinPoint jointPoint) {
+		
+	}
+	
+
+}
