@@ -1,7 +1,0 @@
-package Phone;
-
-public class Battery {
-	
-	String name;
-	
-}

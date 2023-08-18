@@ -1,9 +1,0 @@
-package Phone;
-
-public class Camera {
-	
-	String productor;
-	int pixel;
-	
-	
-}

@@ -1,9 +1,0 @@
-package Phone;
-
-public class Display {
-	
-	String name;
-	String productor;
-	int size;
-	
-}
