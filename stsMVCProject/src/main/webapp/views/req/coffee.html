@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커피</title>
+</head>
+<body>
+	<h1>커피</h1>
+	<table>
+        <tr>
+            <th>커피 종류</th><br>
+            <th>가격</th><br>
+        </tr>
+        <tr>
+            <td th:text="${coffee ?.cname}">-</td>
+            <td th:text="${coffee ?.price}">-</td>
+            <td th:text="${coffee ?.quantity}">-</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>커피 정보 입력</title>
+</head>
+<body>
+	<h1>커피 정보 입력</h1>
+	<form th:action="@{/request/coffee}" method="post">
+        <label for="cname">커피 종류:</label>
+        <input type="text" id="cname" name="cname" required><br>
+        
+        <label for="price">가격:</label>
+        <input type="text" id="price" name="price" required><br>
+        
+        <label for="price">수량:</label>
+        <input type="number" id="price" name="price" required><br>
+        
+        <input type="submit" value="등록">
+    </form>
+</body>
+</html>

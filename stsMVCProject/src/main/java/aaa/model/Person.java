@@ -17,6 +17,18 @@ public class Person {
 	}
 	String pname, gender;
 	boolean mil;
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getAge() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String isMarriage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }
