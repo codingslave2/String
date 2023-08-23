@@ -1,7 +1,0 @@
-package Coffee.type;
-
-public class etc {
-	
-	CoffeeBeans beans;
-	
-}

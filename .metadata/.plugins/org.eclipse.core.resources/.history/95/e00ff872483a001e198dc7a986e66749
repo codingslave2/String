@@ -1,8 +1,0 @@
-package anno_p.Coffee.type;
-
-public class Machiatto {
-	
-	String name = "마끼아또", type="커피";
-	int cc, price;
-	
-}

@@ -1,8 +1,0 @@
-package component;
-
-public class Monitor {
-	
-	String name = "벤큐";
-	int size = 20;
-	
-}

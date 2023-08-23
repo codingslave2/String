@@ -15,6 +15,9 @@ public class Person {
 		this.gender = gender;
 		this.mil = mil;
 	}
+	public Person(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
 	String pname, gender;
 	boolean mil;
 	public String getId() {

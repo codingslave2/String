@@ -1,8 +1,0 @@
-package anno_p.Coffee.type;
-
-public class Latte {
-	
-	String name;
-	int cc, price;
-	
-}

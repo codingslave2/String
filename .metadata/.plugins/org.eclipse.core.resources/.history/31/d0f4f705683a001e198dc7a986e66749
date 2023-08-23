@@ -1,8 +1,0 @@
-package Coffee.type;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class Latte {
-
-}
