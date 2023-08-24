@@ -1,7 +1,6 @@
 package aaa.controll;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -51,17 +50,4 @@ public class SessionController {
 		session.invalidate();
 		return "세션 삭제";
 	}
-	
-    @GetMapping("/loginMain")
-    public String loginMainPage() {
-        
-        return "session/loginMain";
-    }
-	
-    @GetMapping("/logoutPage")
-    public String logoutPage() {
-        
-        return "session/logoutPage";
-    }
-    
 }

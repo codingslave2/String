@@ -3,14 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>req/orderForm</title>
-<style>
-	/* 1번 행에만 색 추가 */
-	tr:nth-of-type(1){
-		background-color: burlywood;
-	}
-	
-	
-</style>
 </head>
 <body>
 <h1>req/orderForm</h1>
@@ -23,8 +15,8 @@
 		</tr>
 		<tr th:each="no : ${#numbers.sequence(0,4)}">
 			<td><input type="text" th:name="${'arr[' + no+'].pname'}" th:value="${'제품' + no}"/></td>
-			<td><input type="text" name="arr[0].price" th:value="${(no+1)*1000}" /></td>
-			<td><input type="text" name="arr[0].cnt" th:value="${(no+3)%4+2}"/></td>
+			<td><input type="text" th:name="|arr[${no}].price|" th:value="${(no+1)*1000}" /></td>
+			<td><input type="text" th:name="|arr[${no}].cnt|" th:value="${(no+3)%4+2}"/></td>
 		</tr>
 		<tr>
 			<td rowspan="3">주소</td>

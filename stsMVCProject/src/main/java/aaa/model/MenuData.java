@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class MenuData {
-	
+
 	String url, txt;
 
 	public MenuData(String url, String txt) {
@@ -12,7 +12,6 @@ public class MenuData {
 		this.url = url;
 		this.txt = txt;
 	}
-	
 	
 	
 }

@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:tt="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>커피 정보 입력</title>
+<title>coffeeForm</title>
 </head>
 <body>
-	<h1>커피 정보 입력</h1>
-	<form th:action="@{/request/coffee}" method="post">
-        <label for="cname">커피 종류:</label>
-        <input type="text" id="cname" name="cname" required><br>
-        
-        <label for="price">가격:</label>
-        <input type="text" id="price" name="price" required><br>
-        
-        <label for="price">수량:</label>
-        <input type="number" id="price" name="price" required><br>
-        
-        <input type="submit" value="등록">
-    </form>
+<h1>coffeeForm</h1>
+<form action="?" method="post">
+	<table border="">
+		<tr>
+			<td>메뉴</td>
+			<td>
+				<select name="menu">
+					<th:block th:each="me:${menu}">
+					<option th:value="${me.key}">[[${me.key}]]</option>
+					</th:block>		
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>수량</td>
+			<td><select name="cnt">
+					
+					<option th:each="no:${#numbers.sequence(1,9)}" th:value="${no}">[[${no}]]</option>
+							
+				</select></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="주문" />
+			</td>
+		</tr>
+	</table>
+</form>
 </body>
 </html>

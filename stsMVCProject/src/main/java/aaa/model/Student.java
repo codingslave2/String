@@ -59,8 +59,4 @@ public class Student implements Comparable<Student>{
 			this.jum.add(i);
 		}
 	}
-
-	public Student(String string, int i, int j, int k) {
-		// TODO Auto-generated constructor stub
-	}
 }

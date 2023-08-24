@@ -15,22 +15,20 @@ public class Person {
 		this.gender = gender;
 		this.mil = mil;
 	}
-	public Person(String string, String string2, String string3) {
-		// TODO Auto-generated constructor stub
+	String pname, gender, id, pw, msg;
+	int age;
+	boolean mil, marriage;
+	public Person(String id, String pname, String pw) {
+		super();
+		this.id = id;
+		this.pname = pname;
+		this.pw = pw;
 	}
-	String pname, gender;
-	boolean mil;
-	public String getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public String getAge() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public String isMarriage() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public boolean idPwChk(Person other) {
+	
+		
+		return id.equals(other.id) && pw.equals(other.pw);
 	}
 	
 	

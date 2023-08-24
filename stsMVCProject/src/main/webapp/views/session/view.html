@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>session/view</title>
+<meta charset="UTF-8">
+<title>session/view</title>
 </head>
 <body>
-    <h1>session/view</h1>
-    <%
-    int [] arr = (int[])session.getAttribute("arr");
-    %>
-    pname:<%=session.getAttribute("pname")%><br/>
-    no:<%=session.getAttribute("no")%><br/>
-    arr:<%=Arrays.toString(arr)("pname")%><br/>
-    st:<%=session.getAttribute("st")%><br/>
+<h1>session/view</h1>
+pname:[[${session.pname}]]<br/>
+no:[[${session.no}]]<br/>
+arr:[[${session.arr}]]<br/>
+st:[[${session.st}]]<br/>
+age:[[${session.age}]]<br/>
 </body>
 </html>

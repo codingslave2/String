@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class Battery {
-	
+
 	String name;
 	int size;
 	
@@ -13,7 +13,6 @@ public class Battery {
 		this.name = name;
 		this.size = size;
 	}
-	
 	
 	
 }

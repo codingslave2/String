@@ -1,14 +1,13 @@
 package aaa.model;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 import lombok.Data;
 
-@Controller
+@Component
 @Data
 public class Camera {
-	
+
 	String name = "전방카메라";
-	int pixel = 2000;
-	
+	int pixel = 2080;
 }

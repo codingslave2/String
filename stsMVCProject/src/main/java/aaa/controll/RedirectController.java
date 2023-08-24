@@ -11,32 +11,31 @@ import aaa.model.Person;
 @Controller
 @RequestMapping("/red")
 public class RedirectController {
-	
+
 	@RequestMapping("from1")
 	String from1() {
 		System.out.println("from1() 진입");
 		
-		// redirect 주소 = 리다이렉팅함
+		//redirect:주소   ---> 리다이렉팅 한다.
 		return "redirect:to";
 	}
 	
 	@RequestMapping("to")
 	String to() {
-		System.out.println("from1() 실행");
+		System.out.println("to() 실행");
 		return "red/to";
 	}
 	
 	@RequestMapping("from2")
 	String from2(Model mm) {
-		
 		//Model 은 parameter 전달 못함
+		
 		System.out.println("from2() 진입");
 		
 		//의미없음
 		mm.addAttribute("id", "bbb");
-		mm.addAttribute("age", "25");
+		mm.addAttribute("age", 37);
 		mm.addAttribute("marriage", true);
-		
 		return "redirect:to";
 	}
 	
@@ -59,28 +58,30 @@ public class RedirectController {
 	
 	@RequestMapping("from4")
 	String from4(String id, int age, boolean marriage) {
-		// 전송되지 않음
-		System.out.println("from4() 진입:" + id + ", " + age + ", " + marriage);
+		System.out.println("from4() 진입:"+id+","+age+","+marriage);
+		
 		return "redirect:to";
 	}
 	
 	@RequestMapping("from5")
 	String from5(String id, int age, boolean marriage) {
-		// 억지로 경로를 보내려면 이런 방식으로 보냄
-		System.out.println("from5() 진입:" + id + ", " + age + ", " + marriage);
-		return "redirect:to?id=" + id + "&age" + age + "&marriage=" + marriage;
+		System.out.println("from5() 진입:"+id+","+age+","+marriage);
+		
+		return "redirect:to?id="+id+"&age="+age+"&marriage="+marriage;
 	}
 	
 	@RequestMapping("from6")
 	ModelAndView from6(Person per) {
 		
-		ModelAndView mav = new ModelAndView();
-		
-		// per.get 방식으로 고치면 에러가 안남
-		System.out.println("from6() 진입:" + per.getId() + ", " + per.getAge() + ", " + per.isMarriage());
+		ModelAndView mav = new ModelAndView("redirect:to");
+		//mav.setViewName("redirect:to");
+		////---->
+		mav.addObject("id", per.getId());
+		mav.addObject("age", per.getAge());
+		mav.addObject("marriage", per.isMarriage());
+		System.out.println("from6() 진입:"+per);
+		////<----
 		
 		return mav;
 	}
-	
-	
 }
