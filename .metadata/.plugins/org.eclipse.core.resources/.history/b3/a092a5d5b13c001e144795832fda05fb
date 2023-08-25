@@ -1,8 +1,0 @@
-package aop_p.Score;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class StudentRes {
-
-}

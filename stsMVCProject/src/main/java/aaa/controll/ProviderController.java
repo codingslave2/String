@@ -21,7 +21,8 @@ public class ProviderController {
 		Object res = provider.getContext().getBean("camera");
 		System.out.println("mm() 실행:"+res);
 		return res;
-	}	
+	}
+	
 	
 	
 
@@ -36,7 +37,4 @@ public class ProviderController {
 		mm.addAttribute("bat",provider.getContext().getBean(bbb));
 		return "provider/view";
 	}
-	
-	
-	
 }

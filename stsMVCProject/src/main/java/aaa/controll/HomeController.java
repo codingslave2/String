@@ -10,7 +10,7 @@ public class HomeController {
 	@RequestMapping("/")
 	//@ResponseBody
 	String homeGo() {
-		System.out.println("홈이다");
+		System.out.println("홈");
 		//return "homehome";
 		return "home";  // views/home.html
 		
